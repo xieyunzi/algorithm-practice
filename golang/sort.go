@@ -170,6 +170,8 @@ func merge(data Interface, l, m, r int) {
 // 	}
 // }
 
+// http://www.ahathinking.com/archives/103.html
+// https://gist.github.com/xieyunzi/e5284007f3d1c2a0bcb3884bab9d8e63
 func InplaceMergeSort(data Interface, leftright ...int) Interface {
 	var l, r int
 	if len(leftright) == 2 {
