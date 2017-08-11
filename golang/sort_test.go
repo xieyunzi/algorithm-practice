@@ -1,7 +1,6 @@
 package golang
 
 import (
-	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -18,8 +17,8 @@ func TestSort(t *testing.T) {
 	original := make(Arr, raw.Len())
 	copy(original, raw)
 
-	fmt.Println("original: ", original)
-	fmt.Println("sorted: ", sorted)
+	// fmt.Println("original: ", original)
+	// fmt.Println("sorted: ", sorted)
 
 	copy(original, raw)
 	assert.Equal(t, sorted, InsertionSort(original))
